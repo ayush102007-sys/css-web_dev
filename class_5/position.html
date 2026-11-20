@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Properties</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: black;
+            color: white;
+            position: sticky;
+            top: 0px;
+        }
+
+        li {
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .container {
+            background-color: rgb(36, 110, 175);
+            color: black;
+            width: 50vw;
+            height: 50vh;
+            text-align: center;
+            margin: auto;
+            padding: 0 50px;
+            position: relative;
+        }
+        p{
+            border: 2px solid red;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            /* position: relative; */
+            position: absolute; 
+        }
+        .box2{
+            width: 42px;
+            height: 22px;
+            background-color: red;
+            position: relative;
+            left: 688px;
+            bottom: 222px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti totam quos ipsum, sint excepturi
+        </p>
+        <div class="box">
+            I am a box
+        </div>
+        <div class="box2">
+            Like 
+        </div>
+    </div>
+</body>
+
+</html>
