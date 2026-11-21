@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Grid Media</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        header , footer{
+            background-color: blue;
+            color: white;
+        }
+        .dashboard{
+            /* display: grid; */
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            min-height: 100vh;
+            background-image: url('space2.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            justify-content: center;
+        }
+        .b1{
+            background-color: aliceblue;
+            color: black;
+            border: 2px solid red;
+            height: 50px;
+            width: 200px;
+            margin: 200px 0px 0px 65px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        This is header part
+    </header>
+    <main>
+        <div class="dashboard">
+            <div class="b1">Cosmic Gallery</div>
+            <div class="b1">Astronomy Quiz</div>
+            <div class="b1">Upcoming Events</div>
+            <div class="b1">Space Encyclopedia</div>
+        </div>
+    </main>
+
+    <footer>
+        Copyright &copy; 2026
+    </footer>
+</body>
+</html>
